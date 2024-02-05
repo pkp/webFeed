@@ -59,7 +59,8 @@
 		<items>
 			<rdf:Seq>
 			{foreach from=$submissions item=item}
-				<rdf:li rdf:resource="{url page=$publicationPage op=$publicationOp path=$item.submission->getBestId()}"/>
+				{assign var="publication" value=$item.submission->getCurrentPublication()}
+				<rdf:li rdf:resource="{url page=$publicationPage op=$publicationOp path=$publication->getData('urlPath')|default:$item.submission->getId()}"/>
 			{/foreach}{* articles *}
 			</rdf:Seq>
 		</items>
@@ -68,11 +69,11 @@
 {foreach from=$submissions item=item}
 	{assign var=submission value=$item.submission}
 	{assign var=publication value=$submission->getCurrentPublication()}
-	<item rdf:about="{url page=$publicationPage op=$publicationOp path=$submission->getBestId()}">
+	<item rdf:about="{url page=$publicationPage op=$publicationOp path=$publication->getData('urlPath')|default:$submission->getId()}">
 
 		{* required elements *}
 		<title>{$publication->getLocalizedTitle()|strip|escape:"html"}</title>
-		<link>{url page=$publicationPage op=$publicationOp path=$submission->getBestId()}</link>
+		<link>{url page=$publicationPage op=$publicationOp path=$publication->getData('urlPath')|default:$submission->getId()}</link>
 
 		{* optional elements *}
 		{if $publication->getLocalizedData('abstract') || $includeIdentifiers}
