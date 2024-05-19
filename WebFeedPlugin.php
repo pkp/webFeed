@@ -76,7 +76,7 @@ class WebFeedPlugin extends GenericPlugin
                 default => 'frontend'
             };
 
-            $className = explode('/', WebFeedGatewayPlugin::class);
+            $className = explode('\\', WebFeedGatewayPlugin::class);
             $className = end($className);
             foreach (WebFeedGatewayPlugin::FEED_MIME_TYPE as $feedType => $mimeType) {
                 $url = $request->url(null, 'gateway', 'plugin', [$className, $feedType]);
