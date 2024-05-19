@@ -75,8 +75,11 @@ class WebFeedPlugin extends GenericPlugin
                 'issue' => 'frontend-issue',
                 default => 'frontend'
             };
+
+            $className = explode('\\', WebFeedGatewayPlugin::class);
+            $className = end($className);
             foreach (WebFeedGatewayPlugin::FEED_MIME_TYPE as $feedType => $mimeType) {
-                $url = $request->url(null, 'gateway', 'plugin', ['WebFeedGatewayPlugin', $feedType]);
+                $url = $request->url(null, 'gateway', 'plugin', [$className, $feedType]);
                 $templateManager->addHeader("webFeedPlugin{$feedType}", "<link rel=\"alternate\" type=\"{$mimeType}\" href=\"{$url}\">", ['contexts' => $contexts]);
             }
 
