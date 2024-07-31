@@ -25,6 +25,8 @@ use APP\template\TemplateManager;
 use Exception;
 use PKP\category\Category;
 use PKP\core\Registry;
+use PKP\facades\Locale;
+use PKP\i18n\LocaleConversion;
 use PKP\plugins\GatewayPlugin;
 
 class WebFeedGatewayPlugin extends GatewayPlugin
@@ -126,7 +128,8 @@ class WebFeedGatewayPlugin extends GatewayPlugin
                     'latestDate' => $latestDate,
                     'feedUrl' => $request->getRequestUrl(),
                     'userGroups' => $userGroups,
-                    'includeIdentifiers' => $includeIdentifiers
+                    'includeIdentifiers' => $includeIdentifiers,
+                    'language' => locale_get_region(Locale::getLocale()) ? locale_get_primary_language(Locale::getLocale()) .  '-' . locale_get_region(Locale::getLocale()) : locale_get_primary_language(Locale::getLocale()),
                 ]
             )
             ->setHeaders(['content-type: ' . static::FEED_MIME_TYPE[$feedType] . '; charset=utf-8'])
