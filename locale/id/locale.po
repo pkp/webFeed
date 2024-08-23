@@ -3,25 +3,25 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-19T11:05:33+00:00\n"
-"PO-Revision-Date: 2020-02-01 18:35+0000\n"
+"PO-Revision-Date: 2024-08-22 23:40+0000\n"
 "Last-Translator: Ramli Baharuddin <ramli.baharuddin@relawanjurnal.id>\n"
-"Language-Team: Indonesian <http://translate.pkp.sfu.ca/projects/ojs/generic-"
+"Language-Team: Indonesian <http://translate.pkp.sfu.ca/projects/plugins/"
 "webFeed/id/>\n"
-"Language: id_ID\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.18.2\n"
 
 msgid "plugins.generic.webfeed.displayName"
 msgstr "Plugin Feed Web"
 
-#, fuzzy
 msgid "plugins.generic.webfeed.description"
 msgstr ""
 "Plugin ini menghasilkan RSS/ Atom web syndication feeds untuk terbitan "
-"sekarang."
+"sekarang. Termasuk dalam plugin ini blok sidebar yang memungkinkan Anda "
+"menampilkan tautan umpan pada sidebar website."
 
 msgid "plugins.generic.webfeed.settings"
 msgstr "Pengaturan"
@@ -29,9 +29,8 @@ msgstr "Pengaturan"
 msgid "plugins.generic.webfeed.settings.issue"
 msgstr "Tampilkan tautan feed web hanya di halaman terbitan."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.homepage"
-msgstr "Tampilkan tautan feed web hanya di beranda dan halaman terbitan."
+msgstr "Tampilkan tautan feed web hanya di halaman beranda."
 
 #, fuzzy
 msgid "plugins.generic.webfeed.settings.all"
@@ -40,13 +39,11 @@ msgstr "Tampilkan tautan feed web di seluruh halaman jurnal."
 msgid "plugins.generic.webfeed.settings.currentIssue"
 msgstr "Tampilkan item pada nomkor terbitan terkini."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.recent"
-msgstr "Tampilkan jumlah item terbaru."
+msgstr "Tampilkan jumlah publikasi paling baru."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.recentArticles"
-msgstr "Jumlah item yang ditampilkan"
+msgstr "Jumlah publikasi yang ditampilkan"
 
 msgid "plugins.generic.webfeed.settings.recentItemsRequired"
 msgstr "Masukkan bilangan bulat positif untuk item yang diterbitkan sekarang."
@@ -59,3 +56,13 @@ msgstr "Logo RSS1"
 
 msgid "plugins.generic.webfeed.rss2.altText"
 msgstr "Logo RSS2"
+
+msgid "plugins.generic.webfeed.settings.includeIdentifiers"
+msgstr ""
+"Cantumkan identifier (ISBN, kata kunci, kategori, dsb) di ringkasan umpan?"
+
+msgid "plugins.generic.webfeed.settings.homepageAndIssues"
+msgstr "Tampilkan tautan web feed hanya pada halaman beranda dan halaman edisi."
+
+msgid "plugins.generic.webfeed.blockTitle"
+msgstr "Terbitan Terkini"
