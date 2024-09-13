@@ -12,7 +12,8 @@ describe('Web Feed plugin tests', () => {
 	it('The side bar and the feeds are displayed properly', () => {
 		cy.login('admin', 'admin', 'publicknowledge');
 
-		cy.get('.app__nav a').contains('Website').click();
+		cy.get('nav div[data-pc-section="header"] a span').contains('Settings').click();
+		cy.get('nav div[data-pc-section="itemcontent"] a span').contains('Website').click({ force: true });
 		cy.get('button[id="plugins-button"]').click();
 
 		// Access the settings and setup some options
@@ -31,7 +32,8 @@ describe('Web Feed plugin tests', () => {
 
 		// Enable the wed feed plugin's sidebar
 		cy.reload();
-		cy.get('.app__nav a').contains('Website').click();
+		cy.get('nav div[data-pc-section="header"] a span').contains('Settings').click();
+		cy.get('nav div[data-pc-section="itemcontent"] a span').contains('Website').click({ force: true });
 		cy.get('button[id="appearance-button"]').click();
 
 		cy.get('#appearance-setup-button').click();
