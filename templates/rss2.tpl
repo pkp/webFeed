@@ -26,7 +26,7 @@
 
 		{* optional elements *}
 		{if $context->getPrimaryLocale()}
-			<language>{$context->getPrimaryLocale()|replace:'_':'-'|strip|escape:"html"}</language>
+			<language>{$language|escape}</language>
 		{/if}
 
 		{if $context->getLocalizedData('licenseTerms')}
