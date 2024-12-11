@@ -26,6 +26,7 @@ use Exception;
 use PKP\category\Category;
 use PKP\core\Registry;
 use PKP\plugins\GatewayPlugin;
+use PKP\userGroup\UserGroup;
 
 class WebFeedGatewayPlugin extends GatewayPlugin
 {
@@ -93,7 +94,7 @@ class WebFeedGatewayPlugin extends GatewayPlugin
         $submissions = $submissions->getMany();
         $latestDate ??= $submissions->first()?->getData('lastModified');
         $submissions = $submissions->map(fn (Submission $submission) => ['submission' => $submission, 'identifiers' => $this->getIdentifiers($submission)]);
-        $userGroups = Repo::userGroup()->getCollector()->filterByContextIds([$context->getId()])->getMany();
+        $userGroups = UserGroup::withContextIds([$context->getId()])->get();
 
         $applicationIdentifier = strtolower(preg_replace('/[^a-z]/i', '', Application::getName()));
         TemplateManager::getManager($request)
