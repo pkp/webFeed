@@ -37,7 +37,7 @@
 		{/if}
 
 		{if $context->getPrimaryLocale()}
-			<dc:language>{$context->getPrimaryLocale()|replace:'_':'-'|strip|escape:"html"}</dc:language>
+			<dc:language>{$language|escape}</dc:language>
 		{/if}
 
 		<prism:publicationName>{$context->getLocalizedName()|strip|escape:"html"}</prism:publicationName>
