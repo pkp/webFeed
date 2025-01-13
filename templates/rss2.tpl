@@ -25,9 +25,7 @@
 		<description>{$description|strip|escape:"html"}</description>
 
 		{* optional elements *}
-		{if $context->getPrimaryLocale()}
-			<language>{$context->getPrimaryLocale()|replace:'_':'-'|strip|escape:"html"}</language>
-		{/if}
+		<language>{$language|escape}</language>
 
 		{if $context->getLocalizedData('licenseTerms')}
 			<copyright>{$context->getLocalizedData('licenseTerms')|strip|escape:"html"}</copyright>

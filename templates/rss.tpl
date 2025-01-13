@@ -36,9 +36,7 @@
 			<dc:publisher>{$publisherInstitution|strip|escape:"html"}</dc:publisher>
 		{/if}
 
-		{if $context->getPrimaryLocale()}
-			<dc:language>{$context->getPrimaryLocale()|replace:'_':'-'|strip|escape:"html"}</dc:language>
-		{/if}
+		<dc:language>{$language|escape}</dc:language>
 
 		<prism:publicationName>{$context->getLocalizedName()|strip|escape:"html"}</prism:publicationName>
 
