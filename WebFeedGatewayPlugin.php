@@ -141,7 +141,7 @@ class WebFeedGatewayPlugin extends GatewayPlugin
     /**
      * Retrieves the identifiers assigned to a submission
      *
-     * @return array<array{'type':string,'label':string,'values':string[]}>
+     * @return array<array{type: string, label: string, values: string[]}>
      */
     private function getIdentifiers(Submission $submission): array
     {
