@@ -26,6 +26,7 @@ use Exception;
 use PKP\category\Category;
 use PKP\core\Registry;
 use PKP\facades\Locale;
+use PKP\i18n\LocaleConversion;
 use PKP\plugins\GatewayPlugin;
 use PKP\userGroup\UserGroup;
 
@@ -129,7 +130,7 @@ class WebFeedGatewayPlugin extends GatewayPlugin
                     'feedUrl' => $request->getRequestUrl(),
                     'userGroups' => $userGroups,
                     'includeIdentifiers' => $includeIdentifiers,
-                    'language' => str_replace(['_', '@'], '-', Locale::getLocale()),
+                    'language' => LocaleConversion::toBcp47(Locale::getLocale()),
                 ]
             )
             ->setHeaders(['content-type: ' . static::FEED_MIME_TYPE[$feedType] . '; charset=utf-8'])
