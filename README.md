@@ -4,9 +4,9 @@
 
 > Contributions: Juan Alperin, Alf Eaton, Alec Smecher
 
-| main    | 3.4.0 | 3.3.0
-|--| ---- | ---- |
-|  [![webFeed](https://github.com/pkp/webFeed/actions/workflows/main.yml/badge.svg)](https://github.com/pkp/webFeed/actions/workflows/main.yml) | [![webFeed](https://github.com/pkp/webFeed/actions/workflows/stable-3_4_0.yml/badge.svg)](https://github.com/pkp/webFeed/actions/workflows/stable-3_4_0.yml)                         
+| main | 3.5.0 | 3.4.0 |
+|------|-------|-------|
+|  [![webFeed](https://github.com/pkp/webFeed/actions/workflows/main.yml/badge.svg)](https://github.com/pkp/webFeed/actions/workflows/main.yml) | [![webFeed](https://github.com/pkp/webFeed/actions/workflows/stable-3_5_0.yml/badge.svg)](https://github.com/pkp/webFeed/actions/workflows/stable-3_5_0.yml) | [![webFeed](https://github.com/pkp/webFeed/actions/workflows/stable-3_4_0.yml/badge.svg)](https://github.com/pkp/webFeed/actions/workflows/stable-3_4_0.yml) | 
 
 ## About
 
