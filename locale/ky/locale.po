@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-04-08 12:50+0000\n"
+"PO-Revision-Date: 2025-04-17 23:41+0000\n"
 "Last-Translator: Mahmut  VURAL <mahmut.vural@outlook.com>\n"
 "Language-Team: Kyrgyz <http://translate.pkp.sfu.ca/projects/plugins/webFeed/"
 "ky/>\n"
@@ -13,3 +13,26 @@ msgstr ""
 
 msgid "plugins.generic.webfeed.displayName"
 msgstr "\"Веб канал\" модулу"
+
+msgid "plugins.generic.webfeed.settings"
+msgstr "Орнотуулар"
+
+msgid "plugins.generic.webfeed.settings.issue"
+msgstr "Веб түрмөгүнүн шилтемелерин маселе беттеринде гана көрсөтүү."
+
+msgid "plugins.generic.webfeed.settings.homepageAndIssues"
+msgstr ""
+"Веб түрмөгүнүн шилтемелерин башкы баракта жана чыгаруу баракчаларында гана "
+"көрсөтүү."
+
+msgid "plugins.generic.webfeed.settings.homepage"
+msgstr "Веб түрмөгүнүн шилтемелерин башкы бетте гана көрсөтүү."
+
+msgid "plugins.generic.webfeed.settings.all"
+msgstr "Бардык колдонмо беттеринде веб-канал шилтемелерин көрсөтүү."
+
+msgid "plugins.generic.webfeed.description"
+msgstr ""
+"Бул плагин RSS/Atom веб-синдикация түрмөктөрүн чыгарат.<br>Плагинде ошондой "
+"эле колдонмоңуздун каптал тилкесинде түрмөк шилтемелерин көрсөтүүгө "
+"мүмкүндүк берген каптал тилкесинин блогу камтылган."
