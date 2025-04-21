@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-04-17 23:41+0000\n"
+"PO-Revision-Date: 2025-04-21 23:45+0000\n"
 "Last-Translator: Mahmut  VURAL <mahmut.vural@outlook.com>\n"
 "Language-Team: Kyrgyz <http://translate.pkp.sfu.ca/projects/plugins/webFeed/"
 "ky/>\n"
@@ -36,3 +36,14 @@ msgstr ""
 "Бул плагин RSS/Atom веб-синдикация түрмөктөрүн чыгарат.<br>Плагинде ошондой "
 "эле колдонмоңуздун каптал тилкесинде түрмөк шилтемелерин көрсөтүүгө "
 "мүмкүндүк берген каптал тилкесинин блогу камтылган."
+
+msgid "plugins.generic.webfeed.rss2.altText"
+msgstr "RSS2 логотиби"
+
+msgid "plugins.generic.webfeed.blockTitle"
+msgstr "Акыркы басылмалар"
+
+msgid "plugins.generic.webfeed.settings.includeIdentifiers"
+msgstr ""
+"Түрмөктүн корутундусуна идентификаторлор (ISBN, ачкыч сөздөр, категориялар ж."
+"б.) кошулсунбу?"
