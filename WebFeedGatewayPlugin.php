@@ -116,6 +116,11 @@ class WebFeedGatewayPlugin extends GatewayPlugin
                         'omp' => 'book',
                         'ops' => 'view'
                     },
+                    'publisher' => match ($applicationIdentifier) {
+                        'ojs' => $context->getData('publisherInstitution'),
+                        'omp' => $context->getData('publisher'),
+                        'ops' => $context->getData('name'),
+                    },
                     'openAccess' => match ($applicationIdentifier) {
                         'ojs' => Submission::ARTICLE_ACCESS_OPEN,
                         'omp' => null,
