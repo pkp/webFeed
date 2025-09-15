@@ -31,9 +31,8 @@
 		<description>{$description|strip|escape:"html"}</description>
 
 		{* optional elements *}
-		{assign var="publisherInstitution" value=$context->getData('publisherInstitution')}
-		{if $publisherInstitution}
-			<dc:publisher>{$publisherInstitution|strip|escape:"html"}</dc:publisher>
+		{if $publisher}
+			<dc:publisher>{$publisher|strip|escape:"html"}</dc:publisher>
 		{/if}
 
 		<dc:language>{$language|escape}</dc:language>
