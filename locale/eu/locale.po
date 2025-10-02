@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-19T11:05:33+00:00\n"
-"PO-Revision-Date: 2025-09-02 12:08+0000\n"
+"PO-Revision-Date: 2025-10-02 21:27+0000\n"
 "Last-Translator: Oihan Odriozola <oodriozola@euskaltzaindia.eus>\n"
 "Language-Team: Basque <http://translate.pkp.sfu.ca/projects/plugins/webFeed/"
 "eu/>\n"
@@ -17,10 +17,11 @@ msgstr ""
 msgid "plugins.generic.webfeed.displayName"
 msgstr "Web elikatzeko iturriaren plugina"
 
-#, fuzzy
 msgid "plugins.generic.webfeed.description"
 msgstr ""
-"Plugin honek RSS/Atom web sindikazioko iturria sortzen du uneko zenbakirako."
+"Plugin honek RSS/Atom web sindikazioko jarioa sortzen du.<br>Pluginak alboko "
+"barra bloke bat ere badu, eta horri esker, jarioen estekak aplikazioaren "
+"alboko barran bistara ditzakezu"
 
 msgid "plugins.generic.webfeed.settings"
 msgstr "Ezarpenak"
@@ -28,25 +29,20 @@ msgstr "Ezarpenak"
 msgid "plugins.generic.webfeed.settings.issue"
 msgstr "Zenbakiaren orrialdeetan bakarrik bistaratu estekak."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.homepage"
-msgstr ""
-"Hasierak orrian eta zenbakiaren orrialdeetan bakarrik bistaratu estekak."
+msgstr "Erakutsi web jarioen estekak hasierako orrian bakarrik."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.all"
-msgstr "Aldizkariko orri guztietan bistaratu estekak."
+msgstr "Erakutsi web jarioen estekak aplikazioaren orri guztietan."
 
 msgid "plugins.generic.webfeed.settings.currentIssue"
 msgstr "Bistaratu uneko zenbaki argitaratuko elementuak."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.recent"
-msgstr ""
+msgstr "Bistaratu azken argitalpenen zenbaki finko bat."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.recentArticles"
-msgstr "azkenak."
+msgstr "Erakutsi beharreko argitalpen-kopurua"
 
 msgid "plugins.generic.webfeed.settings.recentItemsRequired"
 msgstr ""
