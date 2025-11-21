@@ -161,7 +161,3 @@ class WebFeedPlugin extends GenericPlugin
         return __('plugins.generic.webfeed.description');
     }
 }
-
-if (!PKP_STRICT_MODE) {
-    class_alias('\APP\plugins\generic\webFeed\WebFeedPlugin', '\WebFeedPlugin');
-}
