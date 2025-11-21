@@ -139,6 +139,7 @@ class WebFeedGatewayPlugin extends GatewayPlugin
                 ]
             )
             ->setHeaders(['content-type: ' . static::FEED_MIME_TYPE[$feedType] . '; charset=utf-8'])
+            ->registerPlugin('modifier', 'implode', 'implode')
             ->display($this->parentPlugin->getTemplateResource("{$feedType}.tpl"));
 
         return true;
