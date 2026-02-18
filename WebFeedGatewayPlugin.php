@@ -79,7 +79,7 @@ class WebFeedGatewayPlugin extends GatewayPlugin
         $latestDate = null;
         $submissions = Repo::submission()->getCollector()
             ->filterByContextIds([$context->getId()])
-            ->filterByLatestPublished(true)
+            ->filterByStatus([Submission::STATUS_PUBLISHED])
             ->limit($recentItems)
             ->orderBy(Collector::ORDERBY_LAST_MODIFIED, Collector::ORDER_DIR_DESC);
 
