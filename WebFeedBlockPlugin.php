@@ -63,12 +63,4 @@ class WebFeedBlockPlugin extends \PKP\plugins\BlockPlugin
     {
         return $this->parentPlugin->getPluginPath();
     }
-
-    /**
-     * @copydoc Plugin::getTemplatePath()
-     */
-    public function getTemplatePath($inCore = false): string
-    {
-        return "{$this->parentPlugin->getTemplatePath($inCore)}/templates";
-    }
 }
