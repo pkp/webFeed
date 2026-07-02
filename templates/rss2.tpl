@@ -39,7 +39,8 @@
 			<webMaster>{$context->getData('supportEmail')|strip|escape:"html"}{if $context->getData('contactName')} ({$context->getData('supportName')|strip|escape:"html"}){/if}</webMaster>
 		{/if}
 
-		<pubDate>{$latestDate|date_format:$smarty.const.DATE_RSS}</pubDate>
+		{capture assign="latestDate"}{$latestDate|strtotime}{/capture}
+		<pubDate>{$smarty.const.DATE_RSS|date:$latestDate}</pubDate>
 
 		{* <lastBuildDate/> *}
 		{* <category/> *}
@@ -88,7 +89,8 @@
 				</dc:rights>
 				<cc:license {if ($openAccess === null || $openAccess === $publication->getData('accessStatus')) && $publication->isCCLicense()}rdf:resource="{$publication->getData('licenseUrl')|escape}"{/if} />
 				<guid isPermaLink="true">{url page=$publicationPage op=$publicationOp path=$publication->getData('urlPath')|default:$submission->getId()}</guid>
-				<pubDate>{$publication->getData('datePublished')|date_format:$smarty.const.DATE_RSS}</pubDate>
+				{capture assign="datePublished"}{$publication->getData('datePublished')|strtotime}{/capture}
+				<pubDate>{$smarty.const.DATE_RSS|date:$datePublished}</pubDate>
 			</item>
 		{/foreach}{* articles *}
 	</channel>
