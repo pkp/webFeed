@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-19T11:05:33+00:00\n"
-"PO-Revision-Date: 2026-06-15 12:39+0000\n"
-"Last-Translator: Anne-Inger <annrag@oslomet.no>\n"
+"PO-Revision-Date: 2026-09-10 14:59+0000\n"
+"Last-Translator: Jan Erik Frantsvåg <jan.e.frantsvag@uit.no>\n"
 "Language-Team: Norwegian Bokmål <http://translate.pkp.sfu.ca/projects/"
 "plugins/webFeed/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -17,11 +17,11 @@ msgstr ""
 msgid "plugins.generic.webfeed.displayName"
 msgstr "Programutvidelse for webstrømmer"
 
-#, fuzzy
 msgid "plugins.generic.webfeed.description"
 msgstr ""
 "Denne programutvidelsen skaper en RSS/Atom-strøm for siste utgave av "
-"tidsskriftet."
+"tidsskriftet og en sidemeny-blokk som gjør at du kan vise strømmen i "
+"sidemenyen."
 
 msgid "plugins.generic.webfeed.settings"
 msgstr "Innstillinger"
@@ -29,24 +29,20 @@ msgstr "Innstillinger"
 msgid "plugins.generic.webfeed.settings.issue"
 msgstr "Vis webstrømlenker bare på utgavesidene."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.homepage"
-msgstr "Vis webstrømlenker både på hjemmesiden og på utgavesidene."
+msgstr "Vis webstrømlenker bare på hjemmesiden."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.all"
 msgstr "Vis webstrømlenker på alle sider."
 
 msgid "plugins.generic.webfeed.settings.currentIssue"
 msgstr "Vis elementer i inneværende nummer."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.recent"
 msgstr "Vis et fast antall av de nyeste elementene."
 
-#, fuzzy
 msgid "plugins.generic.webfeed.settings.recentArticles"
-msgstr "Antall elementer til visning"
+msgstr "Antall elementer som skal vises"
 
 msgid "plugins.generic.webfeed.settings.recentItemsRequired"
 msgstr "Sett inn et positivt heltall for antall nylig publiserte elementer."
